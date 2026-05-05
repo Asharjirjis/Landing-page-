@@ -120,7 +120,45 @@ section.show { opacity: 1; transform: translateY(0);}
     <div class="faq-item"><strong>How long does it take?</strong><br>5-10 days.</div>
     <div class="faq-item"><strong>Mobile friendly?</strong><br>Yes, fully responsive.</div>
   </div>
-</section><footer>
+</section>
+  <section id="contact">
+  <div class="container">
+    <h2>Get a Free Quote</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <div class="grid">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <input type="text" name="business" placeholder="Business Name (Optional)">
+      <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+  </section>
+  
+<style>
+  .contact-form input,
+  .contact-form textarea {
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.05);
+    color:#fff;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline:none;
+    border-color:#38bdf8;
+  }
+
+  .contact-form button {
+    margin-top:10px;
+  }
+</style>
+  <footer>
   <p>© 2026 WebDesignPro | All rights reserved</p>
 </footer><script>
 const sections = document.querySelectorAll("section");
