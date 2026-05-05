@@ -102,5 +102,19 @@ section.show {
   </div>
 </section><footer>
   <p>© 2026 WebDesignPro | All rights reserved</p>
-</footer></body>
+</footer><script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+  </script></body>
 </html>
