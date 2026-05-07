@@ -163,18 +163,7 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 sections.forEach(section => {
-  observer.observe(section);
-});
-  <script>
-function redirectToWhatsApp() {
-  let name = document.querySelector('input[name="name"]').value;
-  let message = document.querySelector('textarea[name=\"message\"]').value;
-
-  let url = `https://wa.me/918123456789?text=Hi%20my%20name%20is%20${name}%20.%20${message}`;
-
-  window.open(url, '_blank');
-}
-</script>
+  observer.observe(section)});
   </script>
     <a href="https://wa.me/919953126804" class="whatsapp">💬</a>
 </body>
